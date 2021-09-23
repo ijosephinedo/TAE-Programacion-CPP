@@ -1,18 +1,17 @@
-/*
-Implementa un programa que determine el factorial de un número
-
-n! = n * (n - 1) * (n - 2) * ... * 2 * 1
-
-por ejemplo
-
-4! = 4 * 3 * 2 * 1 = 24
-*/
-
 #include <iostream>
 
 using namespace std;
 
 int main(){
+    int factorial = 1, n;
+
+    cin >> n;
+
+    for (int i = 1; i <= n; ++i) {
+        factorial *= i; // factorial = factorial * i;
+    }
+
+    cout << factorial << endl;
 
     return 0;
 }
